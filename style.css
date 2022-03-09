@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'YogaSansLigh';
+  src: url(fonts/YogaSansLight.ttf);
+}
+@font-face {
+  font-family: 'AntoniaTextMedium';
+  src: url(fonts/AntoniaRegular.ttf);
+}
+
+header{
+  padding: 35px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container h1{
+  margin: 1px;
+  font-family: YogaSansLigh;
+  font-weight: lighter;
+}
+.container p{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: YogaSansLigh;
+  font-weight: lighter;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.circle {
+  width: 23px;
+  height: 23px;
+  margin-right: 25px;
+  border: 2px solid;
+  border-color: rgb(143, 143, 143);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.burger {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: rgb(143, 143, 143);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
+  transform: rotate(-45deg) translate(-7px, 6px) ;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.small-circle{
+  width: 19px;
+  height: 19px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.white {
+  border: 1px solid;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+.brown {
+  background-color: #1b141a;
+}
+.pink {
+  background-color: #e6b1a1;
+}
+.green {
+  background-color: #1b3c16;
+}
+.grey {
+  background-color: #535853;
+}
+.orange {
+  background-color: #b15438;
+}
+.gold {
+  background-color: #e5c183;
+}
+.silver {
+  background-color: #bcbcbc;
+}
+.bronse {
+  background-color: #b87e65;
+}
+.black {
+  background-color: #000000;
+}
+
+
+main{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.clocks{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;  
+}
+
+.clocks div{
+  width: 250px;  
+  text-align: center;
+}
+.clocks img{
+  width: 250px; 
+}
+.clocks p{
+  width: 200px;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.strap{
+  width: auto;
+  height: auto;
+  padding: 5px 15px 5px 15px;
+  margin-right: 25px;
+  cursor: pointer;
+
+}
+
+.select {
+  border: 1px solid;
+  border-color: rgb(143, 143, 143);
+  border-radius: 25px;
+  padding: 1px;
+}
+
+.border {
+  border: 1px solid;
+  border-color: rgb(143, 143, 143);
+  border-radius: 25px;
+}
+
+.nav-text {
+
+  margin-right: 10px;
+  font-family: AntoniaTextMedium;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.nav {
+  color: rgb(92, 92, 92);
+  font-family: AntoniaTextMedium;
+}
+
+.question {
+  font-family: AntoniaTextMedium;
+  border: 1px solid;
+  border-color: rgb(143, 143, 143);
+  border-radius: 25px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  color: rgb(143, 143, 143);
+  cursor: pointer;
+}
+
+.logo {
+  height: 25px;
+}
+
+.dot {
+  width: 19px;
+  height: 19px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.dot0 {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50px;
+
+}
+
+.dot1 {
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.dot2 {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.dot3 {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  border-radius: 50px;
+}

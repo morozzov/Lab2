@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction(x) { x.classList.toggle("change");}
+
+        function myFunction2(x, y) { x.classList.toggle("border");
+        var t = document.getElementById(y);
+        t.classList.toggle("border");}
+        function myFunction3(x, y) { 
+        var t = document.getElementById(1);
+        t.classList.remove("select");
+         t = document.getElementById(2);
+        t.classList.remove("select");
+         t = document.getElementById(3);
+        t.classList.remove("select");
+         t = document.getElementById(4);
+        t.classList.remove("select");
+         t = document.getElementById(5);
+        t.classList.remove("select");
+         t = document.getElementById(6);
+        t.classList.remove("select");
+        x.classList.add("select"); }
+        function myFunction2(x, y) { x.classList.toggle("border");
+        var t = document.getElementById(y);
+        t.classList.toggle("border");}
+
+        function myFunction4(x, y) { 
+        var t = document.getElementById(1.1);
+        t.classList.remove("select");
+         t = document.getElementById(2.1);
+        t.classList.remove("select");
+         t = document.getElementById(3.1);
+        t.classList.remove("select");
+         t = document.getElementById(4.1);
+        t.classList.remove("select");
+        x.classList.add("select"); }
+
+        function myFunction5(x, y) { 
+        var t = document.getElementById(1.2);
+        t.classList.remove("select");
+         t = document.getElementById(2.2);
+        t.classList.remove("select");
+         t = document.getElementById(3.2);
+        t.classList.remove("select");
+         t = document.getElementById(4.2);
+        t.classList.remove("select");
+        x.classList.add("select"); }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+            <img src="img/Logo.svg" class="logo" alt=""></div>
+            <div class="box">
+                <div class="logo">
+                    <div class="circle"></div>
+                </div>
+                <div class="burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container nav">
+            <div class="box">
+                <div class="nav-text"><p>Size</p></div>
+
+                <div class="dot select" id="1.2" onclick="myFunction5(this)"><div class="dot0 white"></div></div>
+                <div class="dot" id="2.2" onclick="myFunction5(this)"><div class="dot1 black"></div></div>
+                <div class="dot" id="3.2" onclick="myFunction5(this)"><div class="dot2 black" id="3.2"></div></div>
+                <div class="dot" id="4.2" onclick="myFunction5(this)"><div class="dot3 black" id="3.2"></div></div>
+            </div>
+            <div class="box">
+                <div class="nav-text"><p>Finish</p></div>
+
+                <div class="small-circle white select" id="1.1" onclick="myFunction4(this)"></div>
+                <div class="small-circle gold" id="2.1" onclick="myFunction4(this)"></div>
+                <div class="small-circle silver" id="3.1" onclick="myFunction4(this)"></div>
+                <div class="small-circle bronse" id="4.1" onclick="myFunction4(this)"></div>
+            </div>
+            <div class="box">
+                <div class="nav-text"><p>Strap</p></div>
+
+                <div class="strap border" id="standard" onclick="myFunction2(this, 'quick')">Standard</div>
+                <div class="strap" id="quick" onclick="myFunction2(this, 'standard')">Quick Release</div>
+                <div class="question">?</div>
+
+            </div>
+
+            <div class="box">
+                    <div class="nav-text"><p>Color</p></div>
+
+                    <div class="small-circle white select" id="1" onclick="myFunction3(this)"></div>
+                    <div class="small-circle brown" id="2" onclick="myFunction3(this)"></div>
+                    <div class="small-circle pink" id="3" onclick="myFunction3(this)"></div>
+                    <div class="small-circle green" id="4" onclick="myFunction3(this)"></div>
+                    <div class="small-circle grey" id="5" onclick="myFunction3(this)"></div>
+                    <div class="small-circle orange" id="6" onclick="myFunction3(this)"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="clocks">
+            <div>
+                <img src="img/1.jpg" alt="">
+                <p>42mm Silver Watch</p>            
+                <p>Black Standard Strap</p>            
+            </div>
+            <div>
+                <img src="img/2.jpg" alt="">
+                <p>42mm Gold Watch</p>            
+                <p>Camel Standard Strap</p> 
+            </div>
+            <div>
+                <img src="img/3.jpg" alt="">
+                <p>42mm Gold Watch</p>            
+                <p>Black Standard Strap</p> 
+            </div>
+            <div>
+                <img src="img/4.jpg" alt="">
+                <p>42mm Silver Watch</p>            
+                <p>Grey Standard Strap</p> 
+            </div>
+            <div>
+                <img src="img/5.jpg" alt="">
+                <p>42mm Copper Watch</p>            
+                <p>Green Standard Strap</p> 
+            </div>
+            <div>
+                <img src="img/6.jpg" alt="">
+                <p>42mm Coppper Watch</p>            
+                <p>Camel Standard Strap</p> 
+            </div>
+            <div>
+                <img src="img/7.jpg" alt="">
+                <p>34mm Gold Watch</p>            
+                <p>Camel Standard Strap</p> 
+            </div>
+            <div>
+                <img src="img/8.jpg" alt="">
+                <p>34mm Gold Watch</p>            
+                <p>Black Standard Strap</p> 
+            </div>
+        </div>
+    </main>
+</body>
